@@ -1,0 +1,27 @@
+{
+  "name": "export-india-marketplace",
+  "version": "1.0.0",
+  "description": "A comprehensive marketplace platform for Indian exporters to connect with global buyers",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd backend && npm run dev",
+    "client:dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "marketplace",
+    "export",
+    "india",
+    "trade",
+    "ecommerce",
+    "b2b"
+  ],
+  "author": "ExportIndia Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
